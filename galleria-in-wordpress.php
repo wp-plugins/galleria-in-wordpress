@@ -3,7 +3,7 @@
 Plugin Name: Galleria in WordPress
 Description: Incorporate Galleria into WordPress easily! Simply create Galleries and add images. 
 Author: Eric Lewis
-Version: 1.0
+Version: 1.0.1
 Author URI: http://www.ericandrewlewis.com/
 
 */
@@ -11,8 +11,8 @@ Author URI: http://www.ericandrewlewis.com/
 class Galleria_in_WordPress {
 
 	var $pluginDirectoryLocalPath;
-	var $Galleria_in_WordPress_Admin;
-	var $Galleria_in_WordPress_Display;
+	var $Galleria_for_WordPress_Admin;
+	var $Galleria_for_WordPress_Display;
 
     function __construct() {
     	add_action('init', array(&$this, 'register_post_types') );
@@ -21,8 +21,8 @@ class Galleria_in_WordPress {
         require_once( $this->pluginDirectoryLocalPath . "/classes-galleria-admin.php" );
         require_once( $this->pluginDirectoryLocalPath . "/classes-galleria-display.php" );
         
-        $this->Galleria_in_WordPress_Admin = new Galleria_in_WordPress_Admin;
-        $this->Galleria_in_WordPress_Display = new Galleria_in_WordPress_Display;
+        $this->Galleria_for_WordPress_Admin = new Galleria_for_WordPress_Admin;
+        $this->Galleria_for_WordPress_Display = new Galleria_for_WordPress_Display;
     }
 
 
