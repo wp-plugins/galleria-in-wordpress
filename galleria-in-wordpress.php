@@ -21,8 +21,8 @@ class Galleria_in_WordPress {
         require_once( $this->pluginDirectoryLocalPath . "/classes-galleria-admin.php" );
         require_once( $this->pluginDirectoryLocalPath . "/classes-galleria-display.php" );
         
-        $this->Galleria_for_WordPress_Admin = new Galleria_for_WordPress_Admin;
-        $this->Galleria_for_WordPress_Display = new Galleria_for_WordPress_Display;
+        $this->Galleria_in_WordPress_Admin = new Galleria_in_WordPress_Admin;
+        $this->Galleria_in_WordPress_Display = new Galleria_in_WordPress_Display;
     }
 
 
