@@ -9,7 +9,7 @@ Add Galleria photo galleries to your site.
 
 == Description ==
 
-Galleria for WordPress allows you to easily add photo galleries to your site via the backend. 
+Galleria in WordPress allows you to easily add photo galleries to your site via the backend. 
 
 This initial version is not bare bones, but most of the customizable functionality of Galleria is not there. Let me know what you want from the plugin and I'll update it!
 
