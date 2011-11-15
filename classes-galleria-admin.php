@@ -9,7 +9,6 @@ class Galleria_in_WordPress_Admin {
     function init() {
         add_action('add_meta_boxes', array(&$this, 'register_gallery_photos_meta_box'));
         add_action('admin_head', array( &$this, 'jQuery' ) );
-        add_action('admin_head', array( &$this, 'css' ) );
         add_filter('attachment_fields_to_edit', array(&$this, 'add_link_to_add_to_gallery') );
         add_action('wp_ajax_Galleria_for_WordPress_set_post_thumbnail', array(&$this, 'set_post_thumbnail') );
         add_action('wp_ajax_Galleria_for_WordPress_delete_image_from_gallery', array(&$this, 'delete_image_from_gallery') );
@@ -158,14 +157,6 @@ class Galleria_in_WordPress_Admin {
 		</script>
 		<?php
 
-	}
-
-	function css() {
-		?><style>
-		#postimagediv {
-			display:none;
-		}
-		</style><?php
 	}
 
 	function add_link_to_add_to_gallery($fields) {
