@@ -15,7 +15,7 @@ class Galleria_in_WordPress_Display {
     function register_galleria() {
 
     	$pluginDirectoryLocalPath = dirname(__FILE__);
-    	wp_register_script( 'galleria', WP_PLUGIN_URL . "/galleria/galleria/galleria-1.2.5.min.js");
+    	wp_register_script( 'galleria', WP_PLUGIN_URL . "/galleria-in-wordpress/galleria/galleria-1.2.5.min.js");
     	wp_enqueue_script( 'galleria' );
 
     }
@@ -68,7 +68,7 @@ class Galleria_in_WordPress_Display {
     	?><script>
 	    (function($) {
 	    	$(document).ready( function() { 
-	    		Galleria.loadTheme('<?php echo WP_PLUGIN_URL . "/galleria/galleria/themes/classic/"; ?>galleria.classic.min.js'); <?php
+	    		Galleria.loadTheme('<?php echo WP_PLUGIN_URL . "/galleria-in-wordpress/galleria/themes/classic/"; ?>galleria.classic.min.js'); <?php
 		    	for($i=1 ; $i < $this->instances ; $i++) :
 					?>$('#galleria-<?php echo $i; ?>').galleria();
 					<?php

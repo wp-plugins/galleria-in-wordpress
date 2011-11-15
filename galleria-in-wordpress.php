@@ -3,7 +3,7 @@
 Plugin Name: Galleria in WordPress
 Description: Incorporate Galleria into WordPress easily! Simply create Galleries and add images. 
 Author: Eric Lewis
-Version: 1.0.2
+Version: 1.0.3
 Author URI: http://www.ericandrewlewis.com/
 
 */
