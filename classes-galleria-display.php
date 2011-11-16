@@ -47,7 +47,7 @@ class Galleria_in_WordPress_Display {
 		$content = '<div id="galleria-' . $this->instances . '" style="width:'.$defaults['width'] .'; height: '.$defaults['height'] .'">';
 		foreach( $attachments as $attachment ) :
 			$large_url = wp_get_attachment_image_src($attachment->ID, 'large' );
-			$large_url = $medium_url[0];
+			$large_url = $large_url[0];
 			
 	    	$content .= '<img title="' . $attachment->post_title .'"
             	     alt="' . $attachment->post_excerpt .  '"
